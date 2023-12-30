@@ -74,10 +74,9 @@ nav ul  li a:hover{
 /* style  de  texte */
 .propos
 {
-    width:643px ;
-    height : 326px ;
+    width: 80% ;
+    height : 32px ;
     margin :50px ;
-    border : 2px solid #1d1c02 ;
     padding : 20px ;
 }
 /* style offre */
@@ -85,7 +84,7 @@ nav ul  li a:hover{
     display:flex;
     justify-content: space-between ;
     align-items : center ;
-    margin : 200px ;
+    margin : 250px ;
     width: 700px ;
     
 }
@@ -93,5 +92,50 @@ nav ul  li a:hover{
     width:100%;
     height: 300px ;
     border : 5px solid pink ;
-    margin : 10px ;
+    margin : 20px ;
 }
+/*  intro  offre  style */
+.intro
+{
+    display:block;
+    justify-content: space-between;
+    margin : 200px ;
+    
+}
+.titleoffre
+{
+    text-align:center ;
+}
+/* footer  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .identity {
+    max-width: 400px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    width: 30px; /* Ajustez la taille des icônes selon vos besoins */
+    height: 30px;
+  }
+  
