@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <title>Document</title>
+   
+  <b:skin><![CDATA[    
+/*  navbar  style */       
+ body
+{
+    margin:0;
+    font-family: 'Arial', sans-serif;
+}
+header{
+    background-color: #23ead6;
+    color: #fff ;
+    padding: 10px 0 ;
+}
+
+.navbar {
+    display: flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    max-width : 1200px ;
+    margin : 0 auto ;
+    background-color:rgb(213, 208, 213) ;
+}
+.logo{
+    max-width: 100px ;
+}
+nav ul{
+    list-style : none ;
+    display : flex ;
+}
+nav ul li{
+    margin-right: 20px ;
+    color : black ;
+
+}
+nav ul li a {
+    text-decoration:none ;
+    color : #fff ;
+    font-weight : bold ;
+}
+nav ul  li a:hover{
+    color:#fd00;
+}
+
+/*  slider  style  */
+
+/* background image  style */
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32%;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic9OrEajM7sQc0XmRF56eIv4SSigLsr_JVEjOJENo_EqqteFXBfUCZVQ4hGPNEPQgQdcKRMxQ8gnfr5Nt4LPt5wKZVQnFO_il6Ln1xkTHJN93ncAUqt-Js5iYWr-Hcws1_Znl0Q_Ju35aaI5YuqJq2RKl3_teogBTYDe9s8-SghXodBdKe-b4ZGmsUZhDw/s320/fixed.jpg'); /* replace with your background image */
+    background-size: cover;
+    z-index: -1; /* place the background behind other elements */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add a smooth transition effect */
+    opacity: 1; /* Initial opacity (fully opaque) */
+}
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+/* style  de  texte */
+.propos
+{
+    width: 80% ;
+    height : 32px ;
+    margin :50px ;
+    padding : 20px ;
+}
+
+/* style offre */
+.offre{
+    display:flex;
+    justify-content: space-between ;
+    align-items : center ;
+    margin : 375px ;
+    width: 700px ;
+    background-color : yellow ;
+    
+}
+.item{
+    width:100%;
+    height: 300px ;
+    border : 1px solid rgb(46, 38, 39) ;
+    margin : 20px ;
+}
+.btn
+{
+    width:80% ;
+    height : 20px ;
+    border : 1px solid goldenrod ;
+    padding : 1px ;
+    margin-top :50px ;
+    margin-right: 2px ;
+    text-align: center ;
+    justify-content: center ;
+}
+
+/*  intro  offre text  style */
+.intro
+{
+    background-color: rgb(249, 253, 242) ;
+    display:flex;
+    margin : 20px ;   
+}
+
+.titleoffre
+{
+    text-align:center ;
+}
+/* style  de  la bande */
+.bande
+{
+	width: 100% ;
+    height :  100px ;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJLvGiHpk4MXZkuhkB6nPTOw6ftbzClufUdqbwhEpPRyJG-GNXlZ5zg7NCKR3wpNze9Ds6HN0i9lFk-6lfZj3lcLOm8xx4KSj94dWLtwEH38xHaBQamL1JuTw6474aVGMtB-skNFs7S-ENzVPCTwmQj4FPEB5yjlBpSnKW1EH8qJWZrqi_lviNeKTPhWcF/s320/bande.jpg');
+	background-size: cover;
+}
+
+/* footer  */
+
+  
+  footer {
+    background-color: #1b2b2e;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .identity {
+    max-width: 400px;
+  }
+  .mylinks
+  {
+    
+    max-width:500px ;
+  }
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    width: 30px; /* Ajustez la taille des icônes selon vos besoins */
+    height: 30px;
+  }
+  
+  
+  
+  ]]></b:skin>    
+  
+  </head>
+  <body>
+    <b:section id='test'/>
+    <!--start  navbar -->
+    <div class='navbar'>
+        <div class='logo'>
+            <img alt='waiting...' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBlM5u4V17jG-_e9fMaFM40P7MTAs3yG-b4mfnHcZrLwfLacQAWYXHyBkxUL5CxqieAbPfLVaimFfC4bMOv4GooLp3hewLi0dw0onyYQXaS8Akc8Zfe4QmJWsddpi7YW01NUUt1A-0CIHKf6i3uCYIEGgV7eQDTojpUuGpJG4hszN71oIFNkaXKa7mQEa6/s1600/logoblogger.jpg'/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href='http://'>Accueil</a></li>
+                <li><a href='http://'>Services</a></li>
+                <li><a href='http://'>Produit</a></li>
+                <li><a href='http://'>A propos</a></li>
+                <li><a href='http://'>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--start  slider-->
+    <div class='background-image'/>
+    <div class='slider-container'>
+        <div class='slider'>
+          
+            <img alt='waiting...' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvKGttZku9H_Yfgq_JINGfCs_XxWRLFimWNRflcmW6KQj1Lulj4me1lUaVuytbFV3etoErWwfuiR5Z6hL2yMvPhHD_UqhWra77zD19hDWq1qU527nDbSrRW_CmDYy0HiRp8QPAmxbqdb2Gnazs14LY3wwqp7g4BeNs9R-BmUT9bhQ-GZ9U14mN8II29O01/s320/slider1.jpg'/>
+          
+            <img alt='waiting...' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUaw7_lmJskIsPiNdvGtmfNRR2mGFmLo6KG7JO1wNSBGwuty1dOyBaBM34jhJjvuJHUiC1pD1C_wgWNIQzlDyNAopS4XKO9PvkPT7JYT3n0aTSxkYD5-dKBhlBzVEeeVu9Z0Pic8XaEwNYHR19eAlQ0Nwjs1yLSlPHIvf77iYUS2iLq_I2Oq6CKwYKKm7P/s320/slider2.jpg'/>
+          
+            <img alt='waiting...' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhULlXSleRXfn7WLIkzvZOtbEoINEW9IwoxYSbBb4Q4Y6eNSoTRppKaZZfeO5sdU6YicKPyr1laAxv1t59zOGBxk9uXLJx3WGBZ2zaOGj4R7P7j29asAq5dGOL-4pRW_dBHWX6jdCXUwOHj-_pv_zptCi_Q3U_4bfrIwk2FStJXyaAPh76mmSL9-DZVJn5w/s320/slider3.jpg'/>
+           
+          
+        </div>
+    </div>
+    <!--end slider-->
+    
+   <!-- texte  descriptif  qui ssommes nous -->
+   <div class='propos'>
+    <h2>Web Freelancer Rodrig K.</h2>
+    <p>
+        En quête d&#39;enrichir mon portefeuille professionnel tout en accumulant de l&#39;expérience, 
+je souhaite vous présenter une offre exceptionnelle. Je propose de concevoir un site web sur mesure,intégrant des services complets tels que le référencement, la création de logo, 
+la réalisation de présentations et de CV en ligne
+Mon objectif est de vous offrir une solution digitale complète et efficace pour renforcer votre présence en ligne. 
+En choisissant cette offre, vous bénéficierez d&#39;une conception de site web personnalisée, adaptée à vos besoins
+ spécifiques, ainsi que d&#39;une promotion exclusive de 50% sur l&#39;ensemble des services proposés.
+Au-delà de la création du site, je m&#39;engage à optimiser votre visibilité en ligne grâce à des stratégies avancées 
+de référencement. De plus, je mettrai en œuvre mes compétences pour concevoir un logo distinctif qui renforcera 
+votre identité visuelle. En complément, je proposerai la création de présentations dynamiques et de CV
+ en ligne percutants pour mettre en valeur votre parcours professionnel.
+Cette offre unique est une opportunité pour vous doter d&#39;une présence digitale de qualité à un coût avantageux.
+ 
+
+    </p>
+    <p>
+        Je suis convaincu que cette collaboration sera bénéfique pour votre activité. N&#39;hésitez pas à me contacter
+        pour discuter plus en détail de vos besoins spécifiques et explorer comment cette offre peut contribuer à atteindre 
+       vos objectifs professionnels.
+       Je me tiens à votre disposition pour planifier une rencontre afin d&#39;échanger sur les détails de cette proposition 
+       et répondre à toutes vos questions. Merci de considérer cette offre avec attention, et je me 
+       réjouis à l&#39;idée de collaborer avec vous pour renforcer votre présence en ligne et optimiser votre 
+       image professionnelle. 
+    </p>
+    
+</div>  
+    <!--fin texte -->
+    
+    <!--start  my offer-->
+        
+<div class='offre'>
+
+        <div class='item'>
+            <ul>
+                <div>
+                    <li>Lancez votre activité ou partagez votre passion</li>
+                    <li>beneficier d&#39;un nom de dommaine </li>
+                    <li>integration et  hebergement</li>
+                    <li>à partir de 0Euro</li>
+                    <div class='btn'>Free</div>
+                </div>
+                
+            </ul>
+        </div>
+        <div class='item'>
+            <ul>
+                <div>
+                    <li>Lancez votre activité ou partagez votre passion</li>
+                    <li>beneficier d&#39;un nom de dommaine </li>
+                    <li>integration et  hebergement</li>
+                    <li>à partir de 0Euro</li>
+                <div class='btn'>Premuim</div>
+                </div>
+            </ul>
+        </div>
+        <div class='item'>
+            <ul>
+                <div>
+                    <li>Lancez votre activité ou partagez votre passion</li>
+                    <li>beneficier d&#39;un nom de dommaine </li>
+                    <li>integration et  hebergement</li>
+                    <li>à partir de 0Euro</li>
+                <div class='btn'>Subscribe</div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- the  end  of my  offer -->
+    <div class='bande'>
+    </div>
+    <!--intro offre -->
+    <div class='intro'>
+      <div>
+        <h1 class='titleoffre'>Nos offres</h1>
+            <p>
+                En tant que freelance polyvalent, je propose une gamme complète de 
+                services axés sur le développement web et la conception graphique. 
+                Ma maîtrise de Django, HTML, CSS, JavaScript et React me permet de créer 
+                des applications web dynamiques et intuitives. De plus, mon expertise s&#39;étend à la
+                 création de sites WordPress, garantissant des plateformes flexibles et conviviales.
+                  En parallèle, je propose des services de conception de logos, ajoutant une dimension
+                   visuelle distinctive à votre marque. Avec une approche intégrée, je m&#39;engage
+                 à offrir des solutions digitales complètes et personnalisées pour répondre à vos besoins.
+            </p>
+      </div>
+      <div>
+      <img border='0' data-original-height='5304' data-original-width='7952' height='213' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPr6yF5_46FP596c7EbW_JGJnD7gRR7Zd1tA3zUhfn9QgmIh3UZHvQNCtMK3UqrgpbP8ryl1BlIYrOMkyX-6JHu6Bh2yk1TiZiNTEeBmlSfRxl6tU7bAbOcht-3kgXL4TGzUcd3WrorQe8MQCj7LTQLeOWtl-Gp6w5jRMRJNjG8kw3u4jNRhW0pjvbn__p/s320/pexels-canva-studio-3194523.jpg' width='320'/>
+      </div>
+    </div>
+    <!--the end of the offer text -->
+    
+    <!--footer-->
+    <footer>
+        <div class='footer-content'>
+          <div class='identity'>
+            <h3>Web Freelancer</h3>
+            <p>hay essalama 1 Rue 2 N&#176; 11, Casablanca</p>
+            <p>Gmail: abdelwahedmodest@gmail.com</p>
+          </div>
+          <!--links -->
+          <div class='mylinks'>
+            <ul>
+                <p>Bienvenue chez [Nom de votre agence web], 
+                    l&#39;expertise numérique à votre service. En tant que pionniers de
+                     l&#39;innovation digitale, nous façonnons 
+                    des expériences en ligne exceptionnelles
+                     pour propulser votre entreprise vers de nouveaux sommets.</p>
+                <li><a href='http://'>Accueil</a></li>
+                <li><a href='http://'>Services</a></li>
+                <li><a href='http://'>Produit</a></li>
+                <li><a href='http://'>A propos</a></li>
+                <li><a href='http://'>Contact</a></li>
+            </ul>
+        </div>
+          <div class='social-media'>
+            
+            <a href='https://web.facebook.com/profile.php?id=100040875441076' target='_blank'><img alt='Facebook' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwIoCALTINXxSGgtffTBnfMCR0F5ovHI0FgzdjtfyWXz16cKQpIfH4khSnL0AzW-eF4nsUEV6NjBZi5wuCDCfCWkSyg4hoTdPN2lVDooYOCQyxMEWDjHkR53OyrsbbITdpTbc3N9iOS-JFtMXbNabZ1CWufbVEjETd6GUFKACY5S6NgO_DjSolOCt1ilKI/s320/facebook-icon.png'/></a>
+            
+            <a href='https://web.facebook.com/profile.php?id=100040875441076' target='_blank'><img alt='Instagram' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY1hKlNSii8aL54Y7izF4Ihu9OgdfbSU28WtRGdKYI0hWN6TyB6zPWna3kGCAf3v0DpBmiI_kKcZ2rtYzIKLW4iEMbLrAhJ4fVZNWaQZMUakLrzCjSA-JLdIPajpVmdXnaELGf0Z_8Jnr8bvsZStduMY_H75kydSb9Xp4h_EjbG28sWKh5aBxaYl6ZZxus/s320/instagram-icon.png'/></a>
+            
+            <a href='https://github.com/abdelwahedmodest?tab=repositories' target='_blank'><img alt='GitHub' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2mxgsvM8uVLUypiRV7f_B6EAP7sJJdk9HgF7r0hYAitT5L8Ag1nF9AnLK-8-FaLYwALcgYWsJR_D4DG_RNw_B9lv3LDXa0OD36MMEw4chCzvEoEUxMzqtt9Aj3oXDUtJ7HaUNrAjEAa06g1yASl8vLzNiRt9ItUAK1wRxpF80TayErQxdkvgvE_btWykZ/s320/github-icon.png'/></a>
+            
+            <a href='https://www.youtube.com/channel/UCeo1-KihyEQV4vTwPj1BlEg' target='_blank'><img alt='youtube' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwL2mWbsOy3CNZ-jf-d1RpYIGIiG_BKgjao2iwCjaF2z89gEdiiQxxI-POy0oTB7KAXp-gVhqnPtEtgk2RonPHMaEncYJ7EEA0FIxDWb2DAVwfYgYqE9o3GCDUXy7PLRKR9PW7kolLFG-ttl2HHVlhFBd2Vifu5EvZVtVWj-VjKD3fo0iOzOYblht-SYyL/s320/youtube-icon.png'/></a>
+            <!-- Ajoutez d'autres liens sociaux au besoin -->
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
+    <script>
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+    const slider = document.querySelector(&#39;.slider&#39;);
+    let count = 0;
+
+    function nextSlide() {
+        count++;
+        if (count &gt;= slider.children.length) {
+            count = 0;
+        }
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const offset = -100 * count + &#39;%&#39;;
+        slider.style.transform = &#39;translateX(&#39; + offset + &#39;)&#39;;
+    }
+
+    setInterval(nextSlide, 3000); // Change de diapositive toutes les 3 secondes
+});
+document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+    const background = document.querySelector(&#39;.background-image&#39;);
+    
+    window.addEventListener(&#39;scroll&#39;, function() {
+        const scrollPosition = window.scrollY;
+        const translateY = -scrollPosition * 0.5; // Adjust the multiplier for the desired effect
+        const opacity = 0.5 - scrollPosition / 500; // Adjust the divisor for the desired fade effect
+
+        background.style.transform = &#39;translateY(&#39; + translateY + &#39;px)&#39;;
+        background.style.opacity = opacity;
+    });
+});
+    
+    </script>
+  </body>
+ </html>
